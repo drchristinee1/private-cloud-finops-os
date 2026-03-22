@@ -1,56 +1,161 @@
-Private Cloud FinOps
-Model Outputs Value Repo Setup
-GitHub Pages Demo Site
-Turn your Private Cloud FinOps repo into a live portfolio demo
-Show leadership, hiring teams, and stakeholders how your model works: from cost pools and rate cards to team allocation, showback, and budget comparison.
-View Demo How to Publish
-What this site demonstrates
-	•	Private cloud cost allocation by team
-	•	Rate-card driven showback
-	•	Budget vs actual comparison
-	•	Leadership-ready architecture story
-Architecture
-How the model works
-1. Cost Pools
-Infrastructure, storage, virtualization, labor, and platform overhead are collected into cost pools.
-2. Supply Units
-Capacity is translated into units such as vCPU-hours, GB RAM-hours, and TB storage.
-3. Rate Card
-Unit rates are computed so private cloud services can be priced internally with consistency.
-4. Allocation Logic
-Usage data is mapped to business teams or applications for showback or chargeback.
-5. Budget Comparison
-Allocated costs are compared to team budgets to support governance and decision-making.
-Interactive Demo
-Sample outputs
-This is a static browser-based demo. The numbers below come from a sample JSON file, which makes it perfect for GitHub Pages.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Cloud FinOps Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">Private Cloud FinOps</div>
+      <div class="nav-links">
+        <a href="#model">Model</a>
+        <a href="#outputs">Outputs</a>
+        <a href="#value">Value</a>
+        <a href="#repo">Repo Setup</a>
+      </div>
+    </nav>
 
-Team Allocation
-Reload sample data
-Team
-Allocated Cost
-Budget
-Variance
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">GitHub Pages Demo Site</p>
+        <h1>Turn your Private Cloud FinOps repo into a live portfolio demo</h1>
+        <p class="lead">
+          Show leadership, hiring teams, and stakeholders how your model works:
+          from cost pools and rate cards to team allocation, showback, and budget comparison.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#outputs">View Demo</a>
+          <a class="button secondary" href="#repo">How to Publish</a>
+        </div>
+      </div>
 
-Unit Rate Card
-Unit
-Rate
+      <div class="hero-card">
+        <h3>What this site demonstrates</h3>
+        <ul>
+          <li>Private cloud cost allocation by team</li>
+          <li>Rate-card driven showback</li>
+          <li>Budget vs actual comparison</li>
+          <li>Leadership-ready architecture story</li>
+        </ul>
+      </div>
+    </section>
+  </header>
 
-Why it matters
-What leadership can do with this
-Compare private and public cloud economics
-Use the internal rate card as a basis for comparing workload placement decisions across environments.
-Assign accountability
-Move from shared infrastructure ambiguity to team-level cost ownership and budget visibility.
-Support decisions
-Give leaders a decision framework for pricing, allocation, optimization, and platform planning.
-GitHub Pages
-How to publish this from your repo
-	1	Create a folder named docs in your GitHub repository.
-	2	Upload these files into the docs folder.
-	3	In GitHub, go to Settings → Pages.
-	4	Under Build and deployment, choose Deploy from a branch.
-	5	Select your branch and set the folder to /docs.
-	6	Save, then wait for GitHub to publish your site URL.
-You can later connect this demo page back to your Python repo outputs, screenshots, or exported JSON artifacts.
-Private Cloud FinOps Demo • Built for GitHub Pages • Static front-end portfolio showcase
+  <main>
+    <section id="model" class="section">
+      <p class="section-label">Architecture</p>
+      <h2>How the model works</h2>
+      <div class="flow-grid">
+        <div class="flow-card">
+          <h3>1. Cost Pools</h3>
+          <p>Infrastructure, storage, virtualization, labor, and platform overhead are collected into cost pools.</p>
+        </div>
+        <div class="flow-card">
+          <h3>2. Supply Units</h3>
+          <p>Capacity is translated into units such as vCPU-hours, GB RAM-hours, and TB storage.</p>
+        </div>
+        <div class="flow-card">
+          <h3>3. Rate Card</h3>
+          <p>Unit rates are computed so private cloud services can be priced internally with consistency.</p>
+        </div>
+        <div class="flow-card">
+          <h3>4. Allocation Logic</h3>
+          <p>Usage data is mapped to business teams or applications for showback or chargeback.</p>
+        </div>
+        <div class="flow-card">
+          <h3>5. Budget Comparison</h3>
+          <p>Allocated costs are compared to team budgets to support governance and decision-making.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="outputs" class="section alt">
+      <p class="section-label">Interactive Demo</p>
+      <h2>Sample outputs</h2>
+      <p class="section-text">
+        This is a static browser-based demo. The numbers below come from a sample JSON file,
+        which makes it perfect for GitHub Pages.
+      </p>
+
+      <div class="stats-grid" id="stats"></div>
+
+      <div class="panel-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Team Allocation</h3>
+            <button id="reloadData" class="small-button">Reload sample data</button>
+          </div>
+          <table id="allocationTable">
+            <thead>
+              <tr>
+                <th>Team</th>
+                <th>Allocated Cost</th>
+                <th>Budget</th>
+                <th>Variance</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h3>Unit Rate Card</h3>
+          <table id="rateCardTable">
+            <thead>
+              <tr>
+                <th>Unit</th>
+                <th>Rate</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="value" class="section">
+      <p class="section-label">Why it matters</p>
+      <h2>What leadership can do with this</h2>
+      <div class="value-grid">
+        <div class="value-card">
+          <h3>Compare private and public cloud economics</h3>
+          <p>Use the internal rate card as a basis for comparing workload placement decisions across environments.</p>
+        </div>
+        <div class="value-card">
+          <h3>Assign accountability</h3>
+          <p>Move from shared infrastructure ambiguity to team-level cost ownership and budget visibility.</p>
+        </div>
+        <div class="value-card">
+          <h3>Support decisions</h3>
+          <p>Give leaders a decision framework for pricing, allocation, optimization, and platform planning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="repo" class="section alt">
+      <p class="section-label">GitHub Pages</p>
+      <h2>How to publish this from your repo</h2>
+      <ol class="steps">
+        <li>Create a folder named <code>docs</code> in your GitHub repository.</li>
+        <li>Upload these files into the <code>docs</code> folder.</li>
+        <li>In GitHub, go to <strong>Settings → Pages</strong>.</li>
+        <li>Under <strong>Build and deployment</strong>, choose <strong>Deploy from a branch</strong>.</li>
+        <li>Select your branch and set the folder to <code>/docs</code>.</li>
+        <li>Save, then wait for GitHub to publish your site URL.</li>
+      </ol>
+      <p class="section-text">
+        You can later connect this demo page back to your Python repo outputs, screenshots, or exported JSON artifacts.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Private Cloud FinOps Demo • Built for GitHub Pages • Static front-end portfolio showcase</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
