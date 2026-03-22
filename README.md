@@ -32,13 +32,13 @@ Example:
   "memory_per_gb_hour": 0.008,
   "storage_per_gb": 0.02
 }
----
-
-### 3. Establish Accountability for Consumption
+3. Establish Accountability for Consumption
 
 Allocate cost based on usage and ownership:
-- Team-level visibility
-- Application-level cost
-- Showback / chargeback models
+
+Team-level visibility
+Application-level cost
+Showback / chargeback models
 
 This shifts the organization from centralized cost burden to distributed financial accountability.
+
