@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "total_monthly_cost": 286500,
+    "total_budget": 270000,
+    "teams_allocated": 4,
+    "total_variance": 16500
+  },
+  "team_allocation": [
+    {
+      "team": "Payments",
+      "allocated_cost": 88500,
+      "budget": 82000,
+      "variance": 6500
+    },
+    {
+      "team": "Customer Platform",
+      "allocated_cost": 74100,
+      "budget": 76000,
+      "variance": -1900
+    },
+    {
+      "team": "Data Services",
+      "allocated_cost": 69300,
+      "budget": 65000,
+      "variance": 4300
+    },
+    {
+      "team": "Shared Services",
+      "allocated_cost": 54600,
+      "budget": 47000,
+      "variance": 7600
+    }
+  ],
+  "rate_card": [
+    {
+      "unit": "vCPU-hour",
+      "rate": "$0.031"
+    },
+    {
+      "unit": "GB RAM-hour",
+      "rate": "$0.009"
+    },
+    {
+      "unit": "TB Storage-month",
+      "rate": "$41.00"
+    },
+    {
+      "unit": "Cluster Overhead %",
+      "rate": "12%"
+    },
+    {
+      "unit": "Support Allocation",
+      "rate": "$8,500 / month"
+    }
+  ]
+}
