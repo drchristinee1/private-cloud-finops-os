@@ -21,17 +21,19 @@ Convert total platform cost into measurable capacity economics:
 This reveals what truly drives cost.
 
 ---
+## 2. Create Internal Pricing Signals
 
-### 2. Create Internal Pricing Signals
 Build an internal rate card that reflects real cost of services.
 
 Example:
+
 ```json
 {
   "compute_per_vcpu_hour": 0.042,
   "memory_per_gb_hour": 0.008,
   "storage_per_gb": 0.02
 }
+
 3. Establish Accountability for Consumption
 
 Allocate cost based on usage and ownership:
@@ -41,4 +43,3 @@ Application-level cost
 Showback / chargeback models
 
 This shifts the organization from centralized cost burden to distributed financial accountability.
-
