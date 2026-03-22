@@ -21,11 +21,7 @@ Convert total platform cost into measurable capacity economics:
 This reveals what truly drives cost.
 
 ---
-## 2. Create Internal Pricing Signals
 
-Build an internal rate card that reflects real cost of services.
-
-Example:
 ## 2. Create Internal Pricing Signals
 
 Build an internal rate card that reflects real cost of services.
